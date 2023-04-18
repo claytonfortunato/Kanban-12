@@ -2,6 +2,7 @@ import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
 
 import * as C from "./styles";
+import { Search } from "../../components/Search";
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <Sidebar />
       <C.ContainerKanban>
         <Header />
+        <Search />
       </C.ContainerKanban>
     </C.Container>
   );

@@ -6,6 +6,11 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 2.4rem;
 
+  svg {
+    color: ${(props) => props.theme.colors.gray01};
+    font-size: 2.4rem;
+  }
+
   h1 {
     color: ${(props) => props.theme.colors.brown};
     line-height: 130%;

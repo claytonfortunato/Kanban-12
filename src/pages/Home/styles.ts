@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  width: 100%;
+`;
 
 export const ContainerKanban = styled.div`
   flex: 1;
