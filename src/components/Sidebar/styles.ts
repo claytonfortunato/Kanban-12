@@ -7,13 +7,21 @@ export const Container = styled.aside`
 export const SidebarContainer = styled.nav`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   width: 11.4rem;
   padding-top: 6rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
 
   .menu-item {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    padding: 1rem;
 
     font-size: 16px;
     line-height: 125%;
