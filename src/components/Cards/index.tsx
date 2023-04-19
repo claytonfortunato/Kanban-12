@@ -12,7 +12,7 @@ interface CardsProps {
 export const Cards = ({ cards, boxId, title }: CardsProps) => {
   return (
     <C.Container>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       {cards.map((card, index) => (
         <Card
           key={card.id}

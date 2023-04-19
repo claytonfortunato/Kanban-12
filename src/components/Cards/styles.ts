@@ -5,4 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 2.4rem;
   padding: 2.4rem;
+
+  h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
 `;

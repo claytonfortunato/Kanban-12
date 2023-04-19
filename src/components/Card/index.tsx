@@ -14,7 +14,9 @@ export const Card = ({ index, cardId, descript, tags, title }: CardProps) => {
       <h3>{title}</h3>
       <p>{descript}</p>
       <C.ContainerTags>
-        <span>{tags}</span>
+        {tags.map((tag) => (
+          <span>{tag}</span>
+        ))}
       </C.ContainerTags>
     </C.Container>
   );
