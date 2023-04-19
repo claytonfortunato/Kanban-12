@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 
 import * as C from "./styles";
 import { Search } from "../../components/Search";
+import { BoardContainer } from "../../components/BoardContainer";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <C.ContainerKanban>
         <Header />
         <Search />
+        <BoardContainer />
       </C.ContainerKanban>
     </C.Container>
   );
