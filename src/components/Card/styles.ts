@@ -1,23 +1,24 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ isDragging: boolean }>`
   width: 33rem;
   height: 153px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: ${(props) => props.theme.colors.white};
+  background: ${(props) =>
+    props.isDragging ? props.theme.colors.purple03 : props.theme.colors.white};
   color: ${(props) => props.theme.colors.brown};
   padding: 2.4rem;
   border-radius: 8px;
   line-height: 130%;
   box-shadow: 0px 4px 16px ${(props) => props.theme.colors.gray02};
-  cursor: pointer;
+
   transition: all ease-in 0.2s;
 
-  &:hover {
+  /* &:hover {
     scale: 1.05;
-  }
+  } */
 
   h4 {
     width: 100%;
@@ -31,11 +32,6 @@ export const Container = styled.div`
   }
 
   p {
-    /* overflow: hidden;
-    font-size: 1.4rem;
-    white-space: pre-wrap;
-    text-overflow: ellipsis; */
-
     width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -47,16 +43,20 @@ export const Container = styled.div`
   }
 `;
 
-export const ContainerTags = styled.div`
+export const ContainerTags = styled.div<{ isDragging: boolean }>`
+  width: 100%;
   display: flex;
   gap: 0.8rem;
 
   span {
-    background: ${(props) => props.theme.colors.purple02};
+    background: ${(props) =>
+      props.isDragging
+        ? props.theme.colors.purple03
+        : props.theme.colors.purple02};
     color: ${(props) => props.theme.colors.purple01};
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 `;

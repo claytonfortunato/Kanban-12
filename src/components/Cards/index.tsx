@@ -1,5 +1,6 @@
 import { Todo } from "../../@types/todos";
 import { Card } from "../Card";
+import { Droppable } from "react-beautiful-dnd";
 
 import * as C from "./styles";
 
@@ -9,20 +10,27 @@ interface CardsProps {
   title: string;
 }
 
-export const Cards = ({ cards, boxId, title }: CardsProps) => {
+export function Cards({ cards, boxId, title }: CardsProps) {
   return (
-    <C.Container>
+    <C.CardsWrapper>
       <h2>{title}</h2>
-      {cards.map((card, index) => (
-        <Card
-          key={card.id}
-          cardId={card.id.toString()}
-          descript={card.description}
-          tags={card.tags}
-          title={card.title}
-          index={index}
-        />
-      ))}
-    </C.Container>
+      <Droppable droppableId={boxId}>
+        {(provided) => (
+          <C.Container ref={provided.innerRef} {...provided.droppableProps}>
+            {cards.map((card, index) => (
+              <Card
+                key={card.id}
+                cardId={card.id.toString()}
+                descript={card.description}
+                tags={card.tags}
+                title={card.title}
+                index={index}
+              />
+            ))}
+            {provided.placeholder}
+          </C.Container>
+        )}
+      </Droppable>
+    </C.CardsWrapper>
   );
-};
+}
