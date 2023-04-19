@@ -19,7 +19,8 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 
 
 
-![kanban](https://user-images.githubusercontent.com/104373308/233151506-51faebbb-0846-401f-882a-f7471830f499.png)
+![kanban-att](https://user-images.githubusercontent.com/104373308/233157707-9648e244-3fc5-4da1-b482-c7da247b45af.png)
+
 
   
 ## 👾 Deploy
