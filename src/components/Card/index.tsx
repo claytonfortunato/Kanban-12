@@ -11,7 +11,7 @@ interface CardProps {
 export const Card = ({ index, cardId, descript, tags, title }: CardProps) => {
   return (
     <C.Container>
-      <h5>{title}</h5>
+      <h3>{title}</h3>
       <p>{descript}</p>
       <C.ContainerTags>
         <span>{tags}</span>
