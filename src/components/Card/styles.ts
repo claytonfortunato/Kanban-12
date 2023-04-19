@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 320.33px;
+  width: 33rem;
   height: 153px;
-  display: grid;
-  grid-template-rows: max-content 1fr max-content;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   background-color: ${(props) => props.theme.colors.white};
   color: ${(props) => props.theme.colors.brown};
@@ -19,16 +19,31 @@ export const Container = styled.div`
     scale: 1.05;
   }
 
-  h3 {
+  h4 {
+    width: 100%;
     color: ${(props) => props.theme.colors.brown02};
     font-size: 1.4rem;
+    line-height: 130%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   p {
-    overflow: hidden;
+    /* overflow: hidden;
     font-size: 1.4rem;
     white-space: pre-wrap;
+    text-overflow: ellipsis; */
+
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
 `;
 

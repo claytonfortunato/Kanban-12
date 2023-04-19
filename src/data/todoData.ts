@@ -45,7 +45,7 @@ export const todos: Todo[] = [
   },
   {
     id: 6,
-    title: "#boraCodar uma página de login 🧑‍💻",
+    title: "#boraCodar uma página de login 💻",
     description:
       "Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.",
     tags: ["rocketseat", "desafio"],
@@ -53,7 +53,7 @@ export const todos: Todo[] = [
   },
   {
     id: 7,
-    title: "#boraCodar uma página de clima 🧑‍💻",
+    title: "#boraCodar uma página de clima 💻",
     description:
       "Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.",
     tags: ["rocketseat", "desafio"],

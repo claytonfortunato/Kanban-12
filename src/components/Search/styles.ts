@@ -44,6 +44,7 @@ export const InputWrapper = styled.div`
     border-radius: 8px;
     line-height: 1.6rem;
     outline: none;
+    transition: all ease-in 0.2s;
 
     box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
 
