@@ -25,7 +25,7 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
   
 ## 👾 Deploy
 
-
+[Página Kanban](https://kanban-12.vercel.app/)
 
 ## 🚀 Tecnologias
 
