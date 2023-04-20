@@ -44,7 +44,7 @@ O projeto mostra um kanban simples.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [Figma](https://www.figma.com/file/2g1FTuRtmp1Z6azqyNlUt2/%23boracodar---Desafio-11-(Community)?node-id=11-31&t=7408lVi0E0zPLmAW-0)
+Você pode visualizar o layout do projeto através [Figma](https://www.figma.com/file/ZfAMXfKoqHL9osR6M2B4by/%23boracodar---Desafio-12-(Community)?node-id=11-31&t=LMAPMTVk6LZeP2Pz-0)
  
 
 ## :memo: Licença
