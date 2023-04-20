@@ -8,8 +8,13 @@ export const SidebarContainer = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
-  width: 11.4rem;
+  max-width: 11.4rem;
+  width: 100%;
   padding-top: 6rem;
+
+  @media (max-width: 672px) {
+    align-items: center;
+  }
 
   .menu-item {
     display: flex;
