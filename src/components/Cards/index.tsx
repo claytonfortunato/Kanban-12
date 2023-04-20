@@ -16,7 +16,7 @@ export function Cards({ cards, boxId, title }: CardsProps) {
       <h2>{title}</h2>
       <Droppable droppableId={boxId}>
         {(provided) => (
-          <C.Container ref={provided.innerRef} {...provided.droppableProps}>
+          <div ref={provided.innerRef} {...provided.droppableProps}>
             {cards.map((card, index) => (
               <Card
                 key={card.id}
@@ -28,7 +28,7 @@ export function Cards({ cards, boxId, title }: CardsProps) {
               />
             ))}
             {provided.placeholder}
-          </C.Container>
+          </div>
         )}
       </Droppable>
     </C.CardsWrapper>

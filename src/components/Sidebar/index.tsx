@@ -14,22 +14,22 @@ export const Sidebar = () => {
       <C.SidebarContainer>
         <a href="#" className="menu-item active">
           <img src={portrait} alt="" />
-          Boards
+          <span>Boards</span>
         </a>
 
         <a href="#" className="menu-item">
           <img src={equips} alt="" />
-          Equipes
+          <span>Equipes</span>
         </a>
 
         <a href="#" className="menu-item">
           <img src={relato} alt="" />
-          Relatórios
+          <span>Relatórios</span>
         </a>
 
         <a href="#" className="menu-item">
           <img src={ajustes} alt="" />
-          Ajustes
+          <span>Ajustes</span>
         </a>
       </C.SidebarContainer>
     </C.Container>

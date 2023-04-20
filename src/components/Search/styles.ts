@@ -29,6 +29,16 @@ export const FormContainer = styled.form`
   svg {
     font-size: 2.4rem;
   }
+
+  @media (max-width: 672px) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    button {
+      justify-content: center;
+    }
+  }
 `;
 
 export const InputWrapper = styled.div`

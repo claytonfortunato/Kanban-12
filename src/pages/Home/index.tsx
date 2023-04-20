@@ -5,7 +5,7 @@ import * as C from "./styles";
 import { Search } from "../../components/Search";
 import { BoardContainer } from "../../components/BoardContainer";
 
-export const Home = () => {
+export function Home() {
   return (
     <C.Container>
       <Sidebar />
@@ -16,4 +16,4 @@ export const Home = () => {
       </C.ContainerKanban>
     </C.Container>
   );
-};
+}

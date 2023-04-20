@@ -15,5 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         display: flex;
         background-color: ${(props) => props.theme.colors.purple01};
+
     }
 `;

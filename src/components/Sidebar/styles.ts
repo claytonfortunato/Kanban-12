@@ -31,5 +31,11 @@ export const SidebarContainer = styled.nav`
       color: ${(props) => props.theme.colors.white};
       font-weight: 700;
     }
+
+    @media (max-width: 672px) {
+      span {
+        display: none;
+      }
+    }
   }
 `;
